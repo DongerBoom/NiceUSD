@@ -2,9 +2,16 @@ from exchange_rate import get_currency_rate
 from config import BANK_NAME_MAPPING
 import json
 
-def get_bank_transfer_results(amount_rmb=50000, debug=False):
-    """获取所有银行的汇款计算结果"""
-    rates = get_currency_rate('usd')
+def get_bank_transfer_results(amount_rmb=50000, currency='usd', debug=False):
+    """获取所有银行的汇款计算结果
+    Args:
+        amount_rmb: 人民币金额，默认50000
+        currency: 目标货币类型，默认usd
+        debug: 是否输出调试信息，默认False
+    Returns:
+        list: 包含所有银行计算结果的列表
+    """
+    rates = get_currency_rate(currency)
     if not rates:
         return None
         
