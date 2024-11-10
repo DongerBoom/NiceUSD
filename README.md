@@ -26,10 +26,13 @@ python main.py
 
 在 `main.py` 中可以配置以下参数：
 ~~~python
-amount_rmb = 50000 # 汇款金额
-top_num = 0 # 显示前几名（0表示显示全部）
-banks_available = [] # 指定要查询的银行，空列表表示查询所有银行
-debug = False # 是否显示调试信息
+  params = {
+      'amount_rmb': 50000,  # 汇款金额（人民币）
+      'top_num': 0,  # 显示前几名（0表示显示全部）
+      'currency': 'usd',  # 目标货币类型
+      'banks_available': ['中国银行', '华夏银行', '工商银行', '建设银行', '招商银行'],  # 指定要查询的银行列表
+      'debug': False  # 是否显示调试信息
+  }
 ~~~
 
 ## 项目结构
