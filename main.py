@@ -1,35 +1,23 @@
 from bank_transfer import get_bank_transfer_results, sort_transfer_results
-import json
+from transfer_fee import get_available_banks
 
-def get_available_banks():
-    """从配置文件中获取可用的银行列表"""
-    try:
-        with open('bank_transfer_fees.json', 'r', encoding='utf-8') as f:
-            fees_data = json.load(f)
-            return sorted([fee['bank_name'] for fee in fees_data['fees']])
-    except Exception:
-        return []
-
-def main():
-    # 配置参数
-    amount_rmb = 50000  # 汇款金额（人民币）
-    top_num = 0  # 显示前几名（0表示显示全部）
+def main(amount_rmb, top_num, currency, banks_available, debug):
+    """主函数
+    Args:
+        amount_rmb: 汇款金额（人民币）
+        top_num: 显示前几名（0表示显示全部）
+        currency: 目标货币类型
+        banks_available: 指定要查询的银行列表
+        debug: 是否显示调试信息
+    """
+    if debug:
+        available_banks = get_available_banks()
+        print("支持的银行列表：")
+        for bank in available_banks:
+            print(f"- {bank}")
+        print("\n使用示例：banks_available = ['工商银行', '建设银行']\n")
     
-    # 指定要查询的银行列表
-    # 可选值包括：
-    # - [] 空列表表示查询所有银行
-    # - ['工商银行', '建设银行'] 只查询指定的银行
-    # 支持的银行名称：
-    available_banks = get_available_banks()
-    print("支持的银行列表：")
-    for bank in available_banks:
-        print(f"- {bank}")
-    print("\n使用示例：banks_available = ['工商银行', '建设银行']\n")
-    
-    banks_available = ['中国银行', '华夏银行', '工商银行', '建设银行', '招商银行']
-    debug = False  # 是否显示调试信息
-    
-    all_results = get_bank_transfer_results(amount_rmb, debug)
+    all_results = get_bank_transfer_results(amount_rmb, currency, debug)
     if not all_results:
         print("获取汇率数据失败")
         return
@@ -61,4 +49,13 @@ def main():
         print("-" * 30)
 
 if __name__ == "__main__":
-    main() 
+    # 配置参数
+    params = {
+        'amount_rmb': 50000,  # 汇款金额（人民币）
+        'top_num': 0,  # 显示前几名（0表示显示全部）
+        'currency': 'usd',  # 目标货币类型
+        'banks_available': ['中国银行', '华夏银行', '工商银行', '建设银行', '招商银行'],  # 指定要查询的银行列表
+        'debug': False  # 是否显示调试信息
+    }
+    
+    main(**params) 

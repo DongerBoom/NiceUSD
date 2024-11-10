@@ -128,6 +128,18 @@ def save_to_json(data, filename='bank_transfer_fees.json'):
         print(f"保存数据失败: {str(e)}")
         return False
 
+def get_available_banks():
+    """从配置文件中获取可用的银行列表
+    Returns:
+        list: 已排序的可用银行列表
+    """
+    try:
+        with open('bank_transfer_fees.json', 'r', encoding='utf-8') as f:
+            fees_data = json.load(f)
+            return sorted([fee['bank_name'] for fee in fees_data['fees']])
+    except Exception:
+        return []
+
 if __name__ == "__main__":
     fees = get_transfer_fees()
     if fees:
