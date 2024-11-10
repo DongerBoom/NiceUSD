@@ -1,0 +1,317 @@
+{
+  "update_time": "2024-11-10 22:00:45",
+  "fees": [
+    {
+      "bank_name": "中国银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "260"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "兴业银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "100",
+        "hk_mo_tw": "100"
+      }
+    },
+    {
+      "bank_name": "平安银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "500"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "渣打银行",
+      "client_level": "个人理财客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "100",
+        "max": "500"
+      },
+      "wire_fee": {
+        "overseas": "120",
+        "hk_mo_tw": "120"
+      }
+    },
+    {
+      "bank_name": "北京银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "100",
+        "hk_mo_tw": "100"
+      }
+    },
+    {
+      "bank_name": "工商银行",
+      "client_level": "普通客户电子渠道",
+      "handling_fee": {
+        "rate": "0.08",
+        "min": "40",
+        "max": "208"
+      },
+      "wire_fee": {
+        "overseas": "100",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "工商银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "260"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "支付宝上银汇款",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.50",
+        "min": "100",
+        "max": "250"
+      },
+      "wire_fee": {
+        "overseas": "0",
+        "hk_mo_tw": "0"
+      }
+    },
+    {
+      "bank_name": "交通银行",
+      "client_level": "普通",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "250"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "华夏银行",
+      "client_level": "普通",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "宁波银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "江苏银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "250"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "浦发银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "250"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "民生银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "200",
+        "hk_mo_tw": "100"
+      }
+    },
+    {
+      "bank_name": "民生银行",
+      "client_level": "普通客户网上及手机银行",
+      "handling_fee": {
+        "rate": "0.05",
+        "min": "25",
+        "max": "100"
+      },
+      "wire_fee": {
+        "overseas": "100",
+        "hk_mo_tw": "50"
+      }
+    },
+    {
+      "bank_name": "邮储银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.08",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "70",
+        "hk_mo_tw": "70"
+      }
+    },
+    {
+      "bank_name": "中信银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "180"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "农业银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "建设银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "300"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "光大银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "250"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "广发银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "20",
+        "max": "200"
+      },
+      "wire_fee": {
+        "overseas": "50",
+        "hk_mo_tw": "50"
+      }
+    },
+    {
+      "bank_name": "上海银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "50",
+        "max": "500"
+      },
+      "wire_fee": {
+        "overseas": "80",
+        "hk_mo_tw": "80"
+      }
+    },
+    {
+      "bank_name": "汇丰银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "100",
+        "max": "500"
+      },
+      "wire_fee": {
+        "overseas": "120",
+        "hk_mo_tw": "120"
+      }
+    },
+    {
+      "bank_name": "招商银行",
+      "client_level": "普通客户",
+      "handling_fee": {
+        "rate": "0.10",
+        "min": "100",
+        "max": "1000"
+      },
+      "wire_fee": {
+        "overseas": "150",
+        "hk_mo_tw": "150"
+      }
+    }
+  ]
+}
