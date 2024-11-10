@@ -34,12 +34,19 @@ debug = False # 是否显示调试信息
 
 ## 项目结构
 NiceUSD/
+
 ├── main.py # 主程序
+
 ├── config.py # 配置文件
+
 ├── bank_transfer.py # 银行汇款计算逻辑
+
 ├── exchange_rate.py # 汇率获取模块
+
 ├── transfer_fee.py # 获取各大银行电汇费率
+
 └── bank_transfer_fees.json # transfer_fee.py保存的银行手续费数据
+
 
 ## 输出示例
 
@@ -52,4 +59,4 @@ NiceUSD/
 总费用: 110.00 元
 可兑换: 6934.56 美元
 较最优方案少: 0.00 美元
-------------------------------
+
